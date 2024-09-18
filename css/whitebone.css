@@ -1,44 +1,43 @@
 body{
     background-color: darkgrey;
-    border: 10px;
+    border: 20px;
     border-color: black;
 }
 
 nav{
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 font-size: 40px;
-border: 60px;; 
+border: 10px;; 
 background-color: cyan;
-column-span: all;
-
+justify-items: stretch;
+padding-left: 25%;
+}
+nav:hover{
+    font-size: 43px;
+    background-color: lightgray
 }
 
 .topbanner{
 text-align: center;
 background-color: rgb(187, 212, 212);
-border: color solid 40px black; 
+border: color solid black; 
+border-width: 10px;
 }
-
-
 
 
 .container1{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
     background-color: darkorchid;
-    border-color:solid salmon;
-    border-width: 15px;
-    column-gap: 5px;
-    row-gap: 5px;
-}
+    
+    }
 
 .container2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:50% 50%;
-    border:solid black
-    
+    border:solid black 20px;
 }
 
 .vid1{
@@ -46,21 +45,27 @@ border: color solid 40px black;
   grid-column-end:2;
   grid-row-start:1 ;
   grid-row-end: 2; 
-  border-color: black; 
+  border-color: black;
+  padding-left: 100px;
+  padding-top: 100px;
 }
-.capt1{
+.capt{
     grid-column-start:1; 
     grid-column-end:2;
     grid-row-start:2 ;
     grid-row-end: 3; 
     font-style: italic;
+    padding-left: 100px;
+    padding-bottom: 300px;
 }
 
 .pic1{
     grid-column-start:2; 
     grid-column-end:3;
     grid-row-start:1;
-    grid-row-end: 2;  
+    grid-row-end: 2; 
+    padding-left: 200px;   
+    padding-top: 50px;  
 }
 
 .capt2{
@@ -68,30 +73,84 @@ border: color solid 40px black;
     grid-column-end:3;
     grid-row-start: 2;
     grid-row-end: 3; 
-    font-style: italic; 
+    font-style: italic;
+    padding-left: 200px; 
 }
 
 .item-a {
-
-    grid-column-start:1;
-   
-    grid-row-start:1;
-    
+grid-column-start:1;
+grid-row-start:1;    
 }
+
 .item-b {
 grid-column-start:2;
-
 grid-row-start:1;
+}
 
-}
 .item-c {
-    grid-column-start:1;
-    
-    grid-row-start: 2;
-    
+grid-column-start:1;    
+grid-row-start: 2;    
 }
+
 .item-d {
 grid-column-start: 2;
-
 grid-row-start: 2;
+}
+
+.about{
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+}
+
+.autobio{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.logo{
+    font-size: 30px;
+    color: crimson;
+}
+
+navig:hover{
+    font-style: italic;
+    color:burlywood;
+}
+.gallery{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows:30% 40% 30%;
+border-color: black;
+border-style: solid;
+margin-top: 5px;
+}
+
+.pic-a{
+    grid-column-start:1 ;
+    grid-row-start:1 ;
+}
+.pic-b{
+    grid-column-start:2 ;
+    grid-row-start:1 ;
+}
+.pic-c{
+    grid-column-start:3 ; 
+    grid-row-start:1 ;
+}
+.pic-d{
+    grid-column-start:4;  
+    grid-row-start:1 ;
+}
+.pic-e{
+    grid-column-start:1 ;  
+    grid-row-start:2 ; 
+}
+
+.scary{
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 16px;
+color: darkgreen;
 }
