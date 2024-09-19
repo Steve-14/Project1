@@ -111,7 +111,9 @@ text-align: justify;
 
 .logo{
     font-size: 30px;
-    color: crimson;
+    background: darkgray;
+    
+    background-color: darkgrey;
 }
 
 navig:hover{
@@ -120,32 +122,76 @@ navig:hover{
 }
 .gallery{
     display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows:30% 40% 30%;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows:33% 33% 33%;
 border-color: black;
 border-style: solid;
-margin-top: 5px;
+margin-top: 10px;
 }
 
 .pic-a{
     grid-column-start:1 ;
     grid-row-start:1 ;
+    grid-column-end: 2;
+    grid-row-end: 2;
+    align-content: center;
 }
 .pic-b{
     grid-column-start:2 ;
     grid-row-start:1 ;
+    grid-column-end: 3;
+    grid-row-end: 2;
+    align-content: center;
 }
 .pic-c{
     grid-column-start:3 ; 
     grid-row-start:1 ;
+    grid-column-end: 4;
+    grid-row-end: 2;
+    align-items: center;
 }
 .pic-d{
-    grid-column-start:4;  
-    grid-row-start:1 ;
+    grid-column-start:1;  
+    grid-row-start:2 ;
+    grid-column-end: 2;
+    grid-row-end: 3;
 }
 .pic-e{
-    grid-column-start:1 ;  
+    grid-column-start:2 ;  
     grid-row-start:2 ; 
+    grid-column-end: 3;
+    grid-row-end: 3;
+}
+
+.pic-f{
+grid-column-start: 3;
+grid-row-start:2 ;
+grid-column-end: 4;
+grid-row-end: 3;
+}
+
+.pic-g{
+grid-column-start: 1;
+grid-row-start: 3;
+grid-column-end: 2;
+grid-row-end: 4;
+padding-top: 20px;
+}
+
+.pic-h{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-column-end: 3;
+    grid-row-end: 4;  
+    padding-top: 40px;  
+
+}
+
+.pic-i{
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-column-end: 4;
+    grid-row-end: 4;
 }
 
 .scary{
