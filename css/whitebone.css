@@ -1,20 +1,35 @@
-body{
-    background-color: darkgrey;
-    border: 20px;
-    border-color: black;
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #705ee5da;
+    
 }
 
-nav{
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-font-size: 40px;
-border: 10px;; 
-background-color: cyan;
-justify-items: stretch;
-padding-left: 25%;
-}
-nav:hover{
-    font-size: 43px;
-    background-color: lightgray
+.flex-container > div {
+    background-color: rgb(100, 159, 219);
+    text-align:center;
+    width: 300px;
+    margin: 10px;
+    justify-content:space-between;
+    line-height: 70px;
+    font-size: 20px;
+    }
+/*.navig{
+   display: flex-box; 
+   background-color: DodgerBlue;
+   color: white;
+   width: 100px;
+   margin: 10px;
+   text-align: center;
+   line-height: 75px;
+   font-size: 30px;
+}*/
+
+body{
+    background-color: darkgrey;
+    border: 10px;
+    border-color: black;
 }
 
 .topbanner{
@@ -29,7 +44,7 @@ border-width: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2;
-    background-color: darkorchid;
+    background-color: darkgray;
     
     }
 
@@ -105,23 +120,19 @@ text-align: justify;
 
 .autobio{
     font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
 }
 
 .logo{
-    font-size: 30px;
-    background: darkgray;
-    
-    background-color: darkgrey;
+    font-size: 12px;
+    font: rgba(23, 35, 1, 0.977);
+    background-color: rgba(169, 169, 169, 0);
 }
 
-navig:hover{
-    font-style: italic;
-    color:burlywood;
-}
+
 .gallery{
-    display: grid;
+display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows:33% 33% 33%;
 border-color: black;
@@ -184,7 +195,6 @@ padding-top: 20px;
     grid-column-end: 3;
     grid-row-end: 4;  
     padding-top: 40px;  
-
 }
 
 .pic-i{
@@ -193,9 +203,12 @@ padding-top: 20px;
     grid-column-end: 4;
     grid-row-end: 4;
 }
-
+.sell {
+    font-size: 100px;
+    text-align: center;
+    color: crimson;
+}
 .scary{
-
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: 16px;
 color: darkgreen;

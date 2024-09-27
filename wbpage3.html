@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="\css\whitebone.css" />
     <title>wbpage3</title>
-    <nav>
-      <nav class="navig"></nav>
-      <a href="/index.html"> Page 1</a>
-      <a href="/wbpage2.html"> Page 2</a>
-      <a href="/wbpage3.html"> Page 3</a>
-      <a href="/wbpage4.html"> Page 4</a>
-      <a href="/gallery.html"> - -Gallery</a>
-    </nav>
+    <div class="flex-container">
+      <div><a href="/index.html">Home Page</a> </div>
+      <div><a href="/wbpage2.html">World</a> </div>
+      <div><a href="/wbpage3.html">Character Options</a> </div>
+      <div><a href="/wbpage4.html">Bio Page</a></div>
+      <div><a href="/gallery.html">Gallery</a></div>
+    </div> 
   </head>
   <body>
-    
+    <div class="logo">
+      <p>Greybone will take you home</p>
+      <a href="/index.html"><img src="/img/Greybone.png"></a>
+      </div class="logo"> 
+      <br> 
 <p><h1> Use this page to configure your avatar</h1></p>
 <p><h2> When completed hit submit at bottom of the page</h2></p>
-
+<br>
 <form action="Submit.html" method="get"> <!--get method, redirects when submit is actioned-->
 <label for="email">Email:</label> 
 <input type="email" id="email"/>
@@ -30,36 +33,26 @@
 <br>
 <form>
   <p><h3> Please choose your Gender</h3></p>
-<input type="radio" value="Male">Male </input>
-<input type="radio"  value="Female">Female </input>
-<input type="radio" value="Other">Other </input>
+  <input type="radio" name = "gender" value="Male"/>
+  <input type="radio"name = "gender" value="Female"/>
+  <input type="radio" name = "gender" value="Other"/>
 <br>
 <br>
-<p><h3>Choose your Archetype</h3></p>
-<input type="radio" value="Human">Human 
-<input type="radio" value="Florian">Florian 
-<input type="radio" value=Androgen>Androgen
+  <p><h3>Choose your Archetype</h3></p>
+  <input type="radio" name="arch" value="Human">
+  <input type="radio" name="arch" value="Florian">
+  <input type="radio" name="arch" value=Androgen>
 <br>
 <br>
-<br>
-<p><h3> Please choose the armour you will wear </h3></p>
-<select> <!--used to create drop down list-->
-<option> HEAVY</option>
-<option> MEDIUM</option>
-<option> LIGHT</option>
-<option> WOOD - human or florian only</option>
-<option>CRYOSTEEL - androgen only</option>
-<option> NONE</option>
-</select>
-</form>
-
-<div class="logo"></div>
-  <p>
-    Greybone will take you home
-  </p>
-  <a href= "/index.html">  <img src= "/img/Greybone.png">
-
+  <p><h3> Please choose the armour you will wear </h3></p>
+  <select> <!--used to create drop down list-->
+  <option> HEAVY</option>
+  <option> MEDIUM</option>
+  <option> LIGHT</option>
+  <option> WOOD - human or florian only</option>
+  <option>CRYOSTEEL - androgen only</option>
+  <option> NONE</option>
+  </select>
+  </form>
 </body>
-
-
 </html>
