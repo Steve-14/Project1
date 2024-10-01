@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="\css\whitebone.css" />
     <title>wbpage3</title>
     <div class="flex-container">
-      <div><a href="/index.html">Home Page</a> </div>
-      <div><a href="/wbpage2.html">World</a> </div>
-      <div><a href="/wbpage3.html">Character Options</a> </div>
-      <div><a href="/wbpage4.html">Bio Page</a></div>
-      <div><a href="/gallery.html">Gallery</a></div>
+      <div class=indx><a href="/index.html">Home Page</a> </div>
+      <div clas=wb2><a href="/wbpage2.html">World</a> </div>
+      <div class=wb3><a href="/wbpage3.html">Character Options</a> </div>
+      <div class=wb4><a href="/wbpage4.html">Bio Page</a></div>
+      <div class=gal><a href="/gallery.html">Gallery</a></div>
+      <div class=choices><a href="/choices.html"> Choosing a character </a></div>
     </div> 
   </head>
   <body>
@@ -30,21 +31,24 @@
 <input type="submit" id="submit" value="Please Sign In"/>
 </form>
 <br>
-<br>
 <form>
   <p><h3> Please choose your Gender</h3></p>
+  <input type="radio" name = "gender" value="Female"/>
+  <label>Female</label><br>
   <input type="radio" name = "gender" value="Male"/>
-  <input type="radio"name = "gender" value="Female"/>
+  <label>Male</label><br>
   <input type="radio" name = "gender" value="Other"/>
-<br>
+  <label>Other</label><br>
 <br>
   <p><h3>Choose your Archetype</h3></p>
-  <input type="radio" name="arch" value="Human">
-  <input type="radio" name="arch" value="Florian">
-  <input type="radio" name="arch" value=Androgen>
+  <input type="radio" name="arch" value="Human"/>
+  <label>Human</label><br>
+  <input type="radio" name="arch" value="Florian"/>
+  <label>Florian</label><br>
+  <input type="radio" name="arch" value="Androgen"/>
+  <label>Androgen</label><br>
 <br>
-<br>
-  <p><h3> Please choose the armour you will wear </h3></p>
+  <p><h3>Choose the armour you will wear </h3></p>
   <select> <!--used to create drop down list-->
   <option> HEAVY</option>
   <option> MEDIUM</option>

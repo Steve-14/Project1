@@ -1,0 +1,87 @@
+
+.flex-container {
+    display: flex; /*creates a flex box*/
+    background-color: #705ee5da;
+    position: sticky; /* fix nav bar on page*/
+    top: 0;           /* specifies page position and border*/
+     overflow: hidden;  /*hide any content that exceeds the dimensions of the <div> */
+ }                         
+
+ .flex-container > div {
+    background-color: rgb(100, 159, 219);
+    text-align:center;
+    width: 300px;
+    margin: 10px;
+    justify-content:space-between;
+    line-height: 70px;
+    font-size: 20px;
+    }
+
+    .sticky {
+  position: sticky, top;
+  
+}
+.gal:hover{
+    color: red;
+    background-color: darkgray;
+    text-shadow: 10px;
+}
+.wb2:hover{
+    color:red;
+    background-color: darkgrey;
+}
+.wb3:hover{
+    color:red;
+    background-color: darkgrey;
+}
+.wb4:hover{
+    color:red;
+    background-color: darkgrey;
+}
+.indx:hover{
+    color:red;
+    background-color: darkgrey;
+}
+
+.choices:hover{
+  color:red;
+    background-color: darkgrey; 
+}
+
+.optioncards{
+   background-color: antiquewhite; 
+   display: flex;
+column-gap: 25px;
+justify-content:space-evenly ;
+}
+
+.selector {
+    display: flexbox;
+    flex-direction: column;
+    grid-template-columns:1f 3f;
+    border-width: 6px;
+    border-color: solid black;
+    background-color: cornsilk;
+}
+
+body{
+    background-color: darkgrey;
+    border: 10px;
+    border-color: black;
+}
+.buttons {
+
+
+}
+
+.imagebox {
+
+
+}
+
+.lowerbox {
+    display:flexbox;
+    flex-direction: column;
+    grid-template-columns: 1f 1f 1f;
+    background-color: cornflowerblue;
+}
