@@ -6,27 +6,33 @@
     color: red;
     background-color: darkgray;
     text-shadow: 10px;
+    text-transform: uppercase;
 }
 .wb2:hover{
     color:red;
     background-color: darkgrey;
+    text-transform: uppercase;
 }
 .wb3:hover{
     color:red;
     background-color: darkgrey;
+    text-transform: uppercase;
 }
 .wb4:hover{
     color:red;
     background-color: darkgrey;
+    text-transform: uppercase;
 }
 .indx:hover{
     color:red;
     background-color: darkgrey;
+    text-transform: uppercase;
 }
 
 .choices:hover{
     color: red;
     background-color: darkgray;
+    text-transform: uppercase;
 }
 
 #cont:hover{
@@ -41,7 +47,8 @@
     display: flex; /*creates a flex box*/
     background-color: #705ee5da;
     position: sticky; /* fix nav bar on page*/
-    top: 0;           /* specifies page position and border*/
+    top: 0; 
+    z-index: 3;          /* specifies page position and border*/
      overflow: hidden;  /*hide any content that exceeds the dimensions of the <div> , 
                         preventing it from being displayed outside. */
     
@@ -56,6 +63,9 @@
     justify-content:space-between;
     line-height: 70px;
     font-size: 20px;
+    
+    
+
     }
 
 
@@ -242,13 +252,131 @@ body{
     grid-row-end: 4;
 }
 .sell {
+    display:flex;
+    flex-direction: row;
+    }
+
+    .insella {
+    width: 40%;
+    height: 50vh;
+    background-color: rgba(160, 184, 160, 0.165);
+    text-decoration: black;
     font-size: 100px;
-    color: rgb(89, 109, 121);
-}
+    text-align: center;
+    color: rgb(34, 2, 2);
+
+    }
+
+    .insellb {
+        width: 60%;
+        border:  20px  #705ee5da;
+        border-style: ridge;
+        padding-right: 65px;
+        padding-top: 15px;
+        }
 
 .scary{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     color: rgb(185, 241, 241);
     margin:10px 450px;
+}
+
+/* styling for the images */
+
+.pictures {
+    width: 100%;
+    height: 510px;
+    position: relative;
+  }
+  
+  .pictures img {
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-items: center;
+  }
+  
+  .pictures img:first-child {
+    z-index: 1;
+  }
+  
+  .pictures img:nth-child(2) {
+    z-index: 0;
+  }
+
+  .navigation-button {
+    text-align: center;
+    position: relative;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+
+/* set up dice roller */
+
+#dcontainer{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+#dbutton{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: hsl(240, 83%, 63%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#dbutton:hover{
+    background-color: hsl(240, 77%, 59%);
+}
+
+
+input{
+    font-size: 3rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#diceResult{
+    margin: 24px;
+    font-size: 25px;
+}
+
+#diceImages img{
+    flex-direction: column;
+    flex-grow: 500;
+     
+     margin: 10px;
+}
+
+button {
+    font-size: 20px;
+}
+stuff {
+    font-size: 25px;
+    color:darkgreen
 }

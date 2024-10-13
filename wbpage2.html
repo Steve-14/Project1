@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="\css\whitebone.css" />
+    <script defer src="whitebone.js"></script>
     <title>wbpage2</title>
       <div class="flex-container">
         <div class=indx> <a href="/index.html"> Home Page</a> </div>
@@ -21,10 +22,27 @@
       </div> 
       
         <div class="sell">
-        <p> Greybone is:</p>
+            <div class="insella"> 
+              <p> Greybone is:</p>
+              <p id="stuff">   </p>
+              <p> </p>
+            </div>
+                  <div class="insellb">
+                    <div class="pictures">
+                      <img  id="img1" src="/img/img1.webp" alt="Image 1"/>
+                      <img  id="img2" src="/img/img2.jpg" alt="Image 2"/>
+                      <img  id= "img3" src="/img/img3.jpg" alt="Image 3"/>
+                    </div>
+                        <div class="navigation-button">
+                          <span class="dot active" onclick="changeSlide(0)"></span>
+                          <span class="dot" onclick="changeSlide(1)"></span>
+                          <span class="dot" onclick="changeSlide(2)"></span>
+                        </div>
+                </div>
         </div>
 
         <div class="container2">
+          
           <div class=item-a><p>An amazing world with over a dozen unique Biomes</p>
             <p> Travel across an unrelenting sandscape dotted with ancient tombs, <br> a legendary oasis and an evil pharoh.</p>
           </div>
@@ -45,8 +63,11 @@
           Can you clear the forest of the sudden incursion of Lycanthropes?<br>
           A huge variety of quests to undertake!</p>
         </div>
-      </div class=container2>
-  
+        
+      </div>
+      <br>
+      <button onclick="adreqs()"> Items Required</button>
+
 </body>
 
 </html>

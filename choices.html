@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="choices.css" />
+    <script src= "whitebone.js"></script>;
     <title>Choices</title>
     <div class= "flex-container">          
             <div class=indx ><a href="/index.html"> Home Page</a></div>
@@ -21,7 +22,7 @@
       <p>Greybone will take you home</p>
       <a href="/index.html"> <img src="/img/Greybone.png"></a>
     </div>
-     
+
     <div class="optioncards">
       <details>
         <summary><h3>"The Human Archetype"</h3></summary>
@@ -62,5 +63,31 @@
     <div class="lowerbox">
       <p>some more lovely lovely text to demonstrate another flex thing</p>
     </div>
+  <br>
+    <div id="dcontainer">
+      
+              <h1>Dice Roller</h1>
+      
+              <label ># of Dice</label>
+      
+              <input type="number" id="numOfDice" value="1" min="1" max="6">
+      
+              <button id="dbutton" onclick="rollDice()">Roll Dice</button>
+      
+              <div id="diceResult"></div>
+              <div id="diceImages"></div>
+      
+      
+      
+          </div>
+      
+
+
+    </div>
+
+
+      
   </body>
+
+
 </html>
