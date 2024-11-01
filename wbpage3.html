@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="\css\whitebone.css" />
+    <script src= "whitebone.js"></script>;
     <title>wbpage3</title>
     <div class="flex-container">
       <div class=indx><a href="/index.html">Home Page</a> </div>
@@ -15,10 +16,14 @@
     </div> 
   </head>
   <body>
+    <div id="toggle">
+      <i class ="indicator"></i>
+    </div>
     <div class="logo">
       <p>Greybone will take you home</p>
       <a href="/index.html"><img src="/img/Greybone.png"></a>
-      </div class="logo"> 
+      
+      
       <br> 
 <p><h1> Use this page to configure your avatar</h1></p>
 <p><h2> When completed hit submit at bottom of the page</h2></p>
@@ -31,7 +36,7 @@
 <input type="submit" id="submit" value="Please Sign In"/>
 </form>
 <br>
-<form>
+<form> <!--form to contain radio buttons and drop down list-->
   <p><h3> Please choose your Gender</h3></p>
   <input type="radio" name = "gender" value="Female"/>
   <label>Female</label><br>
@@ -54,7 +59,7 @@
   <option> MEDIUM</option>
   <option> LIGHT</option>
   <option> WOOD - human or florian only</option>
-  <option>CRYOSTEEL - androgen only</option>
+  <option> CRYOSTEEL - androgen only</option>
   <option> NONE</option>
   </select>
   </form>

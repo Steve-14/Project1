@@ -1,28 +1,20 @@
 
-
-//const myHeaders = new Headers();
-//myHeaders.append("Accept", "application/json");
-
-
-//const requestOptions = {
- // method: "GET",
-  //headers: myHeaders,
-  //redirect: "follow"
-//};
+const body = document.querySelector("body");
+const toggle = document.getElementById("toggle");
+  toggle.onclick = function(){
+    toggle.classList.toggle("active")
+    body.classList.toggle("active")
+  }
 
 
-//fetch("https://www.dnd5eapi.co/api/conditions/blinded", requestOptions)
-  //.then((response) => response.text())
-  //.then((result) => console.log(result))
-//.catch((error) => console.error(error));
-  
+
 //set up change images and dots
 // also set automatic change using setInterval
 
 var img = document.querySelectorAll(".pictures img");
 var dots = document.querySelectorAll(".dot");
 var currentImg = 0; // index of the first image 
-const interval = 2000; // duration(speed) of the change
+// const interval = 2000; // duration(speed) of the change
 
 function changeSlide(n) {
   for (var i = 0; i < img.length; i++) {
@@ -30,12 +22,7 @@ function changeSlide(n) {
     dots[i].className = dots[i].className.replace (' active','');
   }
 
-  // currentImg = (currentImg + 1) % img.length; // update the index number
-  // if (n != undefined) {
-  //   clearInterval(timer);
-  //   timer = setInterval(changeSlide, interval);
-  //   currentImg = n
-  //}
+  
     currentImg = n
     img[currentImg].style.opacity = 1;  //makes image visable
     dots[currentImg].className += ' active';
@@ -43,18 +30,17 @@ function changeSlide(n) {
 //setInterval(changeSlide(img), 3000);
 
 
-function adreqs(){
- let stuff = document.createElement("p") ;
-stuff = innerText="All you need to play is dice pens and rule sheet";
-document.body.append(stuff)
+function adreqs(){    // prints stuff in <p> when button is clicked
+  let stuff = document.createElement("p") ;
+  stuff = innerText="All you need to play is 6 6 sided dice, pen & paper and a rule sheet";
+  document.body.append(stuff);
 }
 
- 
 
-
+//Sets up  a dice roller - allows up to 6 d6 to be rolled  & displays dice image
 function rollDice(){
 
-    const numOfDice = document.getElementById("numOfDice").value;
+    const numOfDice = document.getElementById("numOfDice").value; //numbr of die to roll
     const diceResult = document.getElementById("diceResult");
     const diceImages = document.getElementById("diceImages");
 
@@ -72,3 +58,48 @@ function rollDice(){
     diceResult.textContent = `dice: ${values.join(', ')}`;
     diceImages.innerHTML = images.join('');
 }
+/*rying api call
+const monsterInput = document.getElementById("monsterInput");
+const searchButton = document.getElementById("searchButton");
+const monsterResult = document.getElementById("monsterResult");
+
+searchButton.addEventListener("click"),() => {
+  const monsterName = monsterInput.value.toLowerCase();
+  if (monsterName) {
+    searchMonster(monsterName);
+  } else {
+    monsterResult.innerHTML = "Please enter a monster name.";
+  }
+};
+function searchMonster(monsterName) {
+  monsterResult.innerHTML = "Searching...";
+
+ fetch("https://www.dnd5eapi.co/api/monsters")
+  .then((response) => {
+    const monsters = response.data.results;
+    const matchedMonster = monsters.find(
+      (monster) => monster.name.toLowerCase() === monsterName
+    );
+
+    if (matchedMonster) {
+      
+        fetch(matchedMonster.url)
+        .then((monsterResponse) => {
+          const monsterData = monsterResponse.data;
+          monsterResult.innerHTML = 
+          `<h2>${monsterData.name}</h2>
+            <p> ${monsterData.index}</p>
+            <!-- You can display more monster details here -->
+          `;
+        })
+        .catch((error) => {
+          monsterResult.innerHTML = "Error fetching monster details.";
+        });
+    } else {
+      monsterResult.innerHTML = "Monster not found.";
+    }
+  })
+  .catch((error) => {
+    monsterResult.innerHTML = "Error fetching monsters.";
+  });
+}*/

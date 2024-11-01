@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="choices.css" />
-    <script src= "whitebone.js"></script>;
+    <link rel="stylesheet" href="/css/choices.css" />
+    <script defer  src="whitebone.js"></script>;
     <title>Choices</title>
     <div class= "flex-container">          
             <div class=indx ><a href="/index.html"> Home Page</a></div>
@@ -21,6 +21,7 @@
     <div class="logo">
       <p>Greybone will take you home</p>
       <a href="/index.html"> <img src="/img/Greybone.png"></a>
+      
     </div>
 
     <div class="optioncards">
@@ -55,36 +56,60 @@
       </details>
     </div>
     <div class="selector">
-      <div class="buttons"><p>Use the buttons to see an example</p></div>
-      <div class="imagebox"></div>
-      <p>some place holder text</p>
+      <p>Click on an Archetype to see their score ammendments</p><br>
+      <p>Dont forget to add the bonuses and or peanalties to your dice scores</p>
     </div>
 
     <div class="lowerbox">
-      <p>some more lovely lovely text to demonstrate another flex thing</p>
-    </div>
-  <br>
-    <div id="dcontainer">
+      <div class="makecharlist">
+        <p>Once you have</p>
+          <ol>
+            <li>Chosen a character name</li>
+            <li>Entered values for Strength, Resilience, Tech and Skills</li>
+            <li>Picked your armour</li>
+            <li>Chosen your weapon</li>
+          </ol><p> you can proceed to save your character</p>
+          
+        
+      </div>
+      <div class ="chartable"> 
+        <form action="charsheet.html" method="get"></form>
+        <label for=playername> Players Name (up to 45 characters):</label>
+        <input type="text" name id="playersname" playername="playersname" required/><br>
+        <label for= charname> Character Name (Up to 45 characters):</label>
+        <input type="text" charname id="Strength" charname="charname" required/><br>
+        <label for= Strength> Strength Score (Enter as number):</label>
+        <input type="text" Strength id="Strength" Strength=" Strength"required/><br>
+        <label for= Resilience> Resilience Score (Enter as number):</label>
+        <input type="text" Resilience id="Resilience" Resilience=" Resilience"required/><br>
+        <label for= Tech> Tech Score (Enter as number):</label>
+        <input type="text" Tech id="Tech" Tech=" Tech"required/><br>
+        <label for= Skills> Skils Score (Enter as number):</label>
+        <input type="Skills" Skills id="Skills" Skills ="Skills" required/>
+        <input type="submit" id="submit" value="Save"/>
+      </div>
+      <p> You can use the dice roller below to generate values if you wish</p>
+
+
+     </div>
+  
+<br>
+    
+      <div id="dcontainer"> <!--sets up dice roller -->
       
-              <h1>Dice Roller</h1>
+              <h1>Dice Roller</h1> 
       
               <label ># of Dice</label>
       
-              <input type="number" id="numOfDice" value="1" min="1" max="6">
+              <input type="number" id="numOfDice" value="1" min="1" max="6"> <!--number of dice to be rolled from 1 to 6-->
       
-              <button id="dbutton" onclick="rollDice()">Roll Dice</button>
+              <button id="dbutton" onclick="rollDice()">Roll Dice</button> <!--button calls rollDice function-->
       
               <div id="diceResult"></div>
+
               <div id="diceImages"></div>
+      </div>
       
-      
-      
-          </div>
-      
-
-
-    </div>
-
 
       
   </body>
