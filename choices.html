@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <X-Content-Type-Options: nosniff></X-Content-Type-Options:>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/choices.css" />
-    <script defer  src="whitebone.js"></script>;
+    <script defer  src= "/whitebone.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Choices</title>
     <div class= "flex-container">          
             <div class=indx ><a href="/index.html"> Home Page</a></div>
@@ -89,11 +91,9 @@
         <input type="submit" id="submit" value="Save"/>
       </div>
       <p> You can use the dice roller below to generate values if you wish</p>
-
-
-     </div>
+      </div>
   
-<br>
+
     
       <div id="dcontainer"> <!--sets up dice roller -->
       
@@ -101,7 +101,7 @@
       
               <label ># of Dice</label>
       
-              <input type="number" id="numOfDice" value="1" min="1" max="6"> <!--number of dice to be rolled from 1 to 6-->
+              <input type="number" id="numOfDice" value="1" min="1" max="4"> <!--number of dice to be rolled from 1 to 6-->
       
               <button id="dbutton" onclick="rollDice()">Roll Dice</button> <!--button calls rollDice function-->
       
@@ -109,6 +109,18 @@
 
               <div id="diceImages"></div>
       </div>
+<p> Please use the Monster Search Panel below to find the stats for a Monster.<br> Type in the Monster's name and click the blue Search button</p>
+      <br>
+
+      <div class="containerm">
+        <h1>Monster Search</h1>
+        <input type="text" id="monsterInput" placeholder="Enter a monster name" />
+        <button id="searchButton">Search</button>
+        <div id="monsterResult" class="monster-result"></div>
+      </div>
+    
+
+      
       
 
       

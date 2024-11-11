@@ -73,19 +73,6 @@ body{
 }
 
 
-
-        
-        
-.buttons {
-
-
-}
-
-.imagebox {
-
-
-}
-
 .lowerbox {
     display:flexbox;
     flex-direction:column;
@@ -94,14 +81,15 @@ body{
     font-size:large
 }
 
-.monster {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-#monsterInput {
+/* code for api */
+.containerm {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;}
+
+  #monsterInput {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -113,7 +101,7 @@ body{
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 8px 12px;
     cursor: pointer;
   }
@@ -125,12 +113,3 @@ body{
     border-radius: 4px;
     text-align: left;
   }
-
-  /* (using pseudo element to change the look 
-  of the summary pointer in the accordion to =>>
-  (however this prevents the arrow pointer from working)
-
-    summary::marker{
-    content: "=>>";   
-  } */
-
