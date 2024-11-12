@@ -1,10 +1,10 @@
-
-//const body = document.querySelector("body");
-//const toggle = document.getElementById("toggle");
-  //toggle.onclick = function(){
-    //toggle.classList.toggle("active")
-    //body.classList.toggle("active")
-  //}
+//change state of toggle on mouseclick to activate dark or light mode
+const body = document.querySelector("body");
+const toggle = document.getElementById("toggle");
+  toggle.onclick = function(){
+    toggle.classList.toggle("active")
+    body.classList.toggle("active")
+  }
 
 
 
@@ -14,7 +14,7 @@
 var img = document.querySelectorAll(".pictures img");
 var dots = document.querySelectorAll(".dot");
 var currentImg = 0; // index of the first image 
-// const interval = 2000; // duration(speed) of the change
+ const interval = 2000; // duration(speed) of the change
 
 function changeSlide(n) {
   for (var i = 0; i < img.length; i++) {

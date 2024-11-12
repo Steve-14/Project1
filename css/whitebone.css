@@ -1,12 +1,4 @@
 
-/*
-{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-    border-top: 30px;
-    
-  }*/
 
   body{
     cursor:url("/dice-twenty-faces-twenty.png"),auto; /* img for mouse pointer */
@@ -18,12 +10,21 @@ body.active {
     background: ivory
 }
 
+/* position and style for light/dark button caption*/
+.icapt{ 
+    position:relative;
+    left: 120px;
+    color: crimson;
+    font-size: 1.4em;
+}
+
+/* styling anp placing of the toggle background*/
   #toggle {
     position: relative;
     display: block;
-    width:320px;
-    height: 130px;
-    border-radius: 180px;
+    width: 115px;
+    height: 60px;
+    border-radius: 15px;
     background: darkgray(115, 123, 128);
     transition: 0.8s;
     cursor: pointer;
@@ -42,11 +43,11 @@ body.active {
     position:absolute;
     top: 4px; 
     left:3px;
-    width: 135px; 
-    height:120px;
+    width: 50px; 
+    height:50px;
     background: linear-gradient(#444, #222);
     border-radius: 55%;
-    transform: scale(0.94);
+    transform: scale(0.74);
     box-shadow:  0 8px 40px rgb(0,0,0,0.5),
                 inset 0 4px 4px rgba(202, 220, 240, 0.9),
                 inset 0 -4px 4px rgb(255, 255, 255, 0.2);
@@ -63,7 +64,7 @@ body.active {
   
 
   #toggle.active .indicator {
-    left: 180px;
+    left: 60px;
     background: linear-gradient(white, rgb(121, 121, 98));
     box-shadow:0 8px 20px rgb(0,0,0,0.1)
         inset 0 4px 4px rgba(202, 220, 240, 1),
@@ -447,35 +448,76 @@ input{
 button {
     font-size: 20px;
 }
-stuff {
+
+.stuff {
     font-size: 25px;
     color:darkgreen
 }
 
 .showoffparent{
     display: flex;
-    flex-direction: 4 column;
-    
-    align-content:baseline;
-    border: solid greenyellow;
-    background-color: khaki;
-    font-size: 3em;
+    flex-direction:column;
+    border: solid rgb(150, 13, 13);
+    background-color: rgba(56, 184, 239, 0.757);
+    font-size: 1.6em;
+
 }
+
+#book{ /* animation */
+    animation: toTheRight;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    position:relative;
+    animation-fill-mode:backwards;
+    animation-iteration-count: infinite;
+}
+    
+@keyframes toTheRight{
+    from {left:1px;}
+    to {left: 600px;}
+}
+
 
 .showoffchild-a{
-    /*display: flex;*/
-    border: 16px solid rgb(142, 139, 134) ;
-    background-color: rgba(255, 235, 205, 0.365);
+    display: flex;
+    border: 6px solid rgb(142, 139, 134) ;
+    background-color: rgba(73, 51, 197, 0.468);
     justify-content: center;
     align-content: center;    
-    font-size: 1em;
+    font-size: 1.6em;
 }
 
-.showoffchild-b{
-    /*display: flex;*/
+#book2{ /* animation */
     
-    border: 12px solid rgb(142, 139, 134) yellow;
-    background-color: rgba(240, 164, 51, 0.808) orange;
-    align-self:flex-start;    
-    font-size: 1em;
+    animation: toTheRight2;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    position:relative;
+    animation-fill-mode:backwards;
+    animation-iteration-count: infinite;}
+    
+
+    @keyframes toTheRight2{
+    from {left:10px;}
+    to {left: -600px;}
 }
+
+
+.showoffchild-b{
+    display: flex;
+    border: 12px dashed rgb(142, 139, 134) yellow;
+    background-color: cyan;
+    justify-content:flex-end;
+    align-content:last baseline;
+    
+    font-size: 3em;}
+    
+    
+    #booktext{
+    background-color: cyan;
+    transition-timing-function: ease-in;
+    transition-delay: 7s;  
+    animation-iteration-count: infinite;
+    background-color: dodgerblue;
+    animation-fill-mode:backwards;
+    }
